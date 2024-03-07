@@ -1,11 +1,11 @@
-<form action="{$action}" method="post">
+<form action="{$lottery_form_url}" method="post">
     <fieldset>
-        <h3>Участвуйте в нашей лотерее!</h3>
+        <legend>Участвуйте в нашей лотерее!</legend>
         {if isset($lottery_result)}
-            <p>{$lottery_result}</p>
+            <p class="alert alert-success">{$lottery_result}</p>
         {else}
             <p>Нажмите кнопку ниже, чтобы узнать, выиграли ли вы.</p>
-            <button type="submit" name="submit_lottery">Принять участие!</button>
+            <button type="submit" name="submit_lottery" class="btn btn-primary">Принять участие!</button>
         {/if}
     </fieldset>
 </form>
